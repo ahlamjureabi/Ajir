@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>825717865246-r0u1jsal2raj002tpeorre74pgs7om14.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.825717865246-r0u1jsal2raj002tpeorre74pgs7om14</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDlBW0dym01m8KeQlfXXYcVaoRcw5dwVwA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>825717865246</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Ahlam-Jur.Ajir</string>
+	<key>PROJECT_ID</key>
+	<string>ajir-dc006</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ajir-dc006.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:825717865246:ios:7d8d073962d4b5a0b9a70f</string>
+</dict>
+</plist>

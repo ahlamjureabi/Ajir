@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1409E06F277BBA38004A1E0A /* postCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409E06D277BBA37004A1E0A /* postCell.swift */; };
+		1409E070277BBA38004A1E0A /* postCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1409E06E277BBA38004A1E0A /* postCell.xib */; };
 		141C05552779D64F007187F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05542779D64F007187F3 /* AppDelegate.swift */; };
 		141C05572779D64F007187F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05562779D64F007187F3 /* SceneDelegate.swift */; };
 		141C05592779D64F007187F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05582779D64F007187F3 /* ViewController.swift */; };
@@ -17,6 +19,23 @@
 		141C05762779D653007187F3 /* Ajir_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05752779D653007187F3 /* Ajir_AppUITests.swift */; };
 		141C05782779D653007187F3 /* Ajir_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05772779D653007187F3 /* Ajir_AppUITestsLaunchTests.swift */; };
 		141C05852779D6D3007187F3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 141C05842779D6D3007187F3 /* .gitignore */; };
+		141C05872779D8E8007187F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 141C05862779D8E8007187F3 /* GoogleService-Info.plist */; };
+		141C058A2779D9FA007187F3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 141C05892779D9FA007187F3 /* FirebaseAuth */; };
+		141C058C2779D9FA007187F3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 141C058B2779D9FA007187F3 /* FirebaseFirestore */; };
+		141C058E2779D9FA007187F3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 141C058D2779D9FA007187F3 /* FirebaseStorage */; };
+		141C05942779E81E007187F3 /* image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05932779E81E007187F3 /* image.swift */; };
+		141C05972779F2FB007187F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05962779F2FB007187F3 /* User.swift */; };
+		141C05992779F31D007187F3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05982779F31D007187F3 /* Product.swift */; };
+		141C059B2779F362007187F3 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C059A2779F362007187F3 /* Activity.swift */; };
+		141C059F2779F950007187F3 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C059E2779F950007187F3 /* LandingViewController.swift */; };
+		141C05A1277A31C6007187F3 /* Sign Up ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05A0277A31C6007187F3 /* Sign Up ViewController.swift */; };
+		141C05A3277A31DE007187F3 /* Sign In ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05A2277A31DE007187F3 /* Sign In ViewController.swift */; };
+		141C05A5277A321D007187F3 /* Terms ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05A4277A321D007187F3 /* Terms ViewController.swift */; };
+		141C05A7277A3230007187F3 /* Home VbiewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05A6277A3230007187F3 /* Home VbiewController.swift */; };
+		141C05A9277A3252007187F3 /* Contact ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05A8277A3252007187F3 /* Contact ViewController.swift */; };
+		141C05AB277A3287007187F3 /* Product Description ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05AA277A3287007187F3 /* Product Description ViewController.swift */; };
+		141C05AD277A329A007187F3 /* Account ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05AC277A329A007187F3 /* Account ViewController.swift */; };
+		141C05BA277B3E9D007187F3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05B9277B3E9D007187F3 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1409E06D277BBA37004A1E0A /* postCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = postCell.swift; path = ../postCell.swift; sourceTree = "<group>"; };
+		1409E06E277BBA38004A1E0A /* postCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = postCell.xib; path = ../postCell.xib; sourceTree = "<group>"; };
 		141C05512779D64F007187F3 /* Ajir App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ajir App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		141C05542779D64F007187F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		141C05562779D64F007187F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +72,20 @@
 		141C05752779D653007187F3 /* Ajir_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ajir_AppUITests.swift; sourceTree = "<group>"; };
 		141C05772779D653007187F3 /* Ajir_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ajir_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		141C05842779D6D3007187F3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		141C05862779D8E8007187F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		141C05932779E81E007187F3 /* image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image.swift; sourceTree = "<group>"; };
+		141C05962779F2FB007187F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		141C05982779F31D007187F3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		141C059A2779F362007187F3 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		141C059E2779F950007187F3 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		141C05A0277A31C6007187F3 /* Sign Up ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up ViewController.swift"; sourceTree = "<group>"; };
+		141C05A2277A31DE007187F3 /* Sign In ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign In ViewController.swift"; sourceTree = "<group>"; };
+		141C05A4277A321D007187F3 /* Terms ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Terms ViewController.swift"; sourceTree = "<group>"; };
+		141C05A6277A3230007187F3 /* Home VbiewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home VbiewController.swift"; sourceTree = "<group>"; };
+		141C05A8277A3252007187F3 /* Contact ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact ViewController.swift"; sourceTree = "<group>"; };
+		141C05AA277A3287007187F3 /* Product Description ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product Description ViewController.swift"; sourceTree = "<group>"; };
+		141C05AC277A329A007187F3 /* Account ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account ViewController.swift"; sourceTree = "<group>"; };
+		141C05B9277B3E9D007187F3 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141C058A2779D9FA007187F3 /* FirebaseAuth in Frameworks */,
+				141C058C2779D9FA007187F3 /* FirebaseFirestore in Frameworks */,
+				141C058E2779D9FA007187F3 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,13 +140,17 @@
 		141C05532779D64F007187F3 /* Ajir App */ = {
 			isa = PBXGroup;
 			children = (
+				141C05AE277A3472007187F3 /* Utill */,
+				141C05952779E848007187F3 /* controller */,
+				141C05902779E77F007187F3 /* View */,
+				141C058F2779E714007187F3 /* Model */,
 				141C05542779D64F007187F3 /* AppDelegate.swift */,
 				141C05562779D64F007187F3 /* SceneDelegate.swift */,
 				141C05582779D64F007187F3 /* ViewController.swift */,
-				141C055A2779D64F007187F3 /* Main.storyboard */,
 				141C055D2779D653007187F3 /* Assets.xcassets */,
 				141C055F2779D653007187F3 /* LaunchScreen.storyboard */,
 				141C05622779D653007187F3 /* Info.plist */,
+				141C05862779D8E8007187F3 /* GoogleService-Info.plist */,
 			);
 			path = "Ajir App";
 			sourceTree = "<group>";
@@ -130,6 +172,50 @@
 			path = "Ajir AppUITests";
 			sourceTree = "<group>";
 		};
+		141C058F2779E714007187F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				141C05982779F31D007187F3 /* Product.swift */,
+				141C05962779F2FB007187F3 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		141C05902779E77F007187F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1409E06D277BBA37004A1E0A /* postCell.swift */,
+				1409E06E277BBA38004A1E0A /* postCell.xib */,
+				141C055A2779D64F007187F3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		141C05952779E848007187F3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				141C059E2779F950007187F3 /* LandingViewController.swift */,
+				141C05A0277A31C6007187F3 /* Sign Up ViewController.swift */,
+				141C05A2277A31DE007187F3 /* Sign In ViewController.swift */,
+				141C05A6277A3230007187F3 /* Home VbiewController.swift */,
+				141C05AA277A3287007187F3 /* Product Description ViewController.swift */,
+				141C05B9277B3E9D007187F3 /* DetailsViewController.swift */,
+				141C05AC277A329A007187F3 /* Account ViewController.swift */,
+				141C05A4277A321D007187F3 /* Terms ViewController.swift */,
+				141C05A8277A3252007187F3 /* Contact ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		141C05AE277A3472007187F3 /* Utill */ = {
+			isa = PBXGroup;
+			children = (
+				141C05932779E81E007187F3 /* image.swift */,
+				141C059A2779F362007187F3 /* Activity.swift */,
+			);
+			path = Utill;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +232,11 @@
 			dependencies = (
 			);
 			name = "Ajir App";
+			packageProductDependencies = (
+				141C05892779D9FA007187F3 /* FirebaseAuth */,
+				141C058B2779D9FA007187F3 /* FirebaseFirestore */,
+				141C058D2779D9FA007187F3 /* FirebaseStorage */,
+			);
 			productName = "Ajir App";
 			productReference = 141C05512779D64F007187F3 /* Ajir App.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +309,9 @@
 				Base,
 			);
 			mainGroup = 141C05482779D64E007187F3;
+			packageReferences = (
+				141C05882779D9F9007187F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 141C05522779D64F007187F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,6 +332,8 @@
 				141C05612779D653007187F3 /* LaunchScreen.storyboard in Resources */,
 				141C055E2779D653007187F3 /* Assets.xcassets in Resources */,
 				141C055C2779D64F007187F3 /* Main.storyboard in Resources */,
+				141C05872779D8E8007187F3 /* GoogleService-Info.plist in Resources */,
+				1409E070277BBA38004A1E0A /* postCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +358,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141C05A7277A3230007187F3 /* Home VbiewController.swift in Sources */,
 				141C05592779D64F007187F3 /* ViewController.swift in Sources */,
+				141C05942779E81E007187F3 /* image.swift in Sources */,
+				141C059F2779F950007187F3 /* LandingViewController.swift in Sources */,
+				141C05A5277A321D007187F3 /* Terms ViewController.swift in Sources */,
+				141C059B2779F362007187F3 /* Activity.swift in Sources */,
 				141C05552779D64F007187F3 /* AppDelegate.swift in Sources */,
+				141C05AB277A3287007187F3 /* Product Description ViewController.swift in Sources */,
+				141C05972779F2FB007187F3 /* User.swift in Sources */,
+				141C05BA277B3E9D007187F3 /* DetailsViewController.swift in Sources */,
+				141C05AD277A329A007187F3 /* Account ViewController.swift in Sources */,
+				1409E06F277BBA38004A1E0A /* postCell.swift in Sources */,
+				141C05A9277A3252007187F3 /* Contact ViewController.swift in Sources */,
 				141C05572779D64F007187F3 /* SceneDelegate.swift in Sources */,
+				141C05A1277A31C6007187F3 /* Sign Up ViewController.swift in Sources */,
+				141C05A3277A31DE007187F3 /* Sign In ViewController.swift in Sources */,
+				141C05992779F31D007187F3 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +738,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		141C05882779D9F9007187F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ahlamjureabi/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		141C05892779D9FA007187F3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 141C05882779D9F9007187F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		141C058B2779D9FA007187F3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 141C05882779D9F9007187F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		141C058D2779D9FA007187F3 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 141C05882779D9F9007187F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 141C05492779D64E007187F3 /* Project object */;
 }
