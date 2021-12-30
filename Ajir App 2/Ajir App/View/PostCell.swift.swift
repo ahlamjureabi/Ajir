@@ -1,14 +1,16 @@
 //
-//  postCell.swift
+//  postCellTableViewCell:TableViewCell.swift
 //  Ajir App
 //
 //  Created by Ahlam Ahlam on 25/05/1443 AH.
 //
 
 import UIKit
-import Firebase
-class postCell: UITableViewCell {
 
+class postCellTableViewCell_TableViewCell: UITableViewCell {
+
+    
+    
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var postDescriptionLabel: UILabel!
     @IBOutlet weak var postTitleLabel: UILabel!

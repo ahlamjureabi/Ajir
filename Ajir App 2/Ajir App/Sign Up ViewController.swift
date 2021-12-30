@@ -28,16 +28,13 @@ class Sign_Up_ViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePickerController.delegate = self
-        
-       
+        // Do any additional setup after loading the view.
     }
     
- 
     @IBAction func changePasswordVisibility(_ sender: AnyObject) {
         passwordTextField.isSecureTextEntry.toggle()
         if  passwordTextField.isSecureTextEntry {
@@ -51,7 +48,7 @@ class Sign_Up_ViewController: UIViewController {
         }
     }
     
-    @IBAction func confirmPasswordeye(_ sender: AnyObject) {
+    @IBAction func eyePasswordConfrem(_ sender: AnyObject) {
         confirmPasswordTextField.isSecureTextEntry.toggle()
         if  confirmPasswordTextField.isSecureTextEntry {
             if let image = UIImage(systemName: "eye.fill") {
@@ -107,8 +104,6 @@ class Sign_Up_ViewController: UIViewController {
                                             vc.modalPresentationStyle = .fullScreen
                                             Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
                                             self.present(vc, animated: true, completion: nil)
-                                            
-                                            
                                         }
                                     }
                                 }

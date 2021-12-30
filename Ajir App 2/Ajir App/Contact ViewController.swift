@@ -1,14 +1,13 @@
 //
-//  postCell.swift
+//  Contact ViewController.swift
 //  Ajir App
 //
-//  Created by Ahlam Ahlam on 24/05/1443 AH.
+//  Created by Ahlam Ahlam on 23/05/1443 AH.
 //
 
 import UIKit
 
-class postCell: UIViewController
-{
+class Contact_ViewController: UIViewController {
 
     
     
@@ -17,7 +16,7 @@ class postCell: UIViewController
 
         // Do any additional setup after loading the view.
     }
-
+    
 
     /*
     // MARK: - Navigation
