@@ -10,6 +10,37 @@ import UIKit
 
 class Terms_ViewController: UIViewController {
 
-//    @IBOutlet weak var checkBox: UIButton!
+    @IBOutlet weak var textViewTerms: UITextView!
+    
+    @IBOutlet weak var checkBox: UIButton!
+    
+    var flag  = false
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+
+    @IBAction func checkBoxButton(_ sender: UIButton) {
+        
+        if (flag == false)
+        {
+            sender.setBackgroundImage((UIImage(named:"checkbox")), for: UIControl.State.normal)
+            flag = true
+        }
+        else
+        {
+            sender.setBackgroundImage((UIImage(named:"uncheckbox")), for: UIControl.State.normal)
+            flag = false
+        }
+       
+        
+    }
+   
+    
     
 }
+
+
+
+

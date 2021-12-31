@@ -13,6 +13,7 @@ struct Post {
     var title = ""
     var description = ""
     var imageUrl = ""
+    var imageeUrl:User
     var user:User
     var createdAt:Timestamp?
     
@@ -28,5 +29,6 @@ struct Post {
         }
         self.id = id
         self.user = user
+        self.imageeUrl = user
     }
 }

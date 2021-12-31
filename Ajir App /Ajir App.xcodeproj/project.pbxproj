@@ -30,9 +30,9 @@
 		141C05A3277A31DE007187F3 /* Sign In ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05A2277A31DE007187F3 /* Sign In ViewController.swift */; };
 		141C05A5277A321D007187F3 /* Terms ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05A4277A321D007187F3 /* Terms ViewController.swift */; };
 		141C05AB277A3287007187F3 /* Product Description ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05AA277A3287007187F3 /* Product Description ViewController.swift */; };
-		141C05AD277A329A007187F3 /* Account ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05AC277A329A007187F3 /* Account ViewController.swift */; };
 		141C05BA277B3E9D007187F3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05B9277B3E9D007187F3 /* DetailsViewController.swift */; };
 		142E8358277C76E100AC41AA /* postCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142E8357277C76E100AC41AA /* postCell.swift */; };
+		142E835A277DAF7500AC41AA /* Contact ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142E8359277DAF7500AC41AA /* Contact ViewController.swift */; };
 		14F5E8CC277C40E100A3AB82 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5E8CB277C40E100A3AB82 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,9 +78,9 @@
 		141C05A2277A31DE007187F3 /* Sign In ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign In ViewController.swift"; sourceTree = "<group>"; };
 		141C05A4277A321D007187F3 /* Terms ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Terms ViewController.swift"; sourceTree = "<group>"; };
 		141C05AA277A3287007187F3 /* Product Description ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product Description ViewController.swift"; sourceTree = "<group>"; };
-		141C05AC277A329A007187F3 /* Account ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account ViewController.swift"; sourceTree = "<group>"; };
 		141C05B9277B3E9D007187F3 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		142E8357277C76E100AC41AA /* postCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postCell.swift; sourceTree = "<group>"; };
+		142E8359277DAF7500AC41AA /* Contact ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Contact ViewController.swift"; path = "View/Contact ViewController.swift"; sourceTree = "<group>"; };
 		14F5E8CB277C40E100A3AB82 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,9 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				141C05AE277A3472007187F3 /* Utill */,
-				141C05952779E848007187F3 /* controller */,
-				141C05902779E77F007187F3 /* View */,
 				141C058F2779E714007187F3 /* Model */,
+				141C05902779E77F007187F3 /* View */,
+				141C05952779E848007187F3 /* controller */,
 				141C05542779D64F007187F3 /* AppDelegate.swift */,
 				141C05562779D64F007187F3 /* SceneDelegate.swift */,
 				141C05582779D64F007187F3 /* ViewController.swift */,
@@ -195,8 +195,8 @@
 				141C05AA277A3287007187F3 /* Product Description ViewController.swift */,
 				14F5E8CB277C40E100A3AB82 /* HomeViewController.swift */,
 				141C05B9277B3E9D007187F3 /* DetailsViewController.swift */,
-				141C05AC277A329A007187F3 /* Account ViewController.swift */,
 				141C05A4277A321D007187F3 /* Terms ViewController.swift */,
+				142E8359277DAF7500AC41AA /* Contact ViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -351,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142E835A277DAF7500AC41AA /* Contact ViewController.swift in Sources */,
 				141C05592779D64F007187F3 /* ViewController.swift in Sources */,
 				141C05942779E81E007187F3 /* image.swift in Sources */,
 				141C059F2779F950007187F3 /* LandingViewController.swift in Sources */,
@@ -361,7 +362,6 @@
 				141C05AB277A3287007187F3 /* Product Description ViewController.swift in Sources */,
 				141C05972779F2FB007187F3 /* User.swift in Sources */,
 				141C05BA277B3E9D007187F3 /* DetailsViewController.swift in Sources */,
-				141C05AD277A329A007187F3 /* Account ViewController.swift in Sources */,
 				142E8358277C76E100AC41AA /* postCell.swift in Sources */,
 				141C05572779D64F007187F3 /* SceneDelegate.swift in Sources */,
 				141C05A1277A31C6007187F3 /* Sign Up ViewController.swift in Sources */,

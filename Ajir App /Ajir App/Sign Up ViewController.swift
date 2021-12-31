@@ -94,7 +94,7 @@ class Sign_Up_ViewController: UIViewController {
                                     "id":authResult.user.uid,
                                     "name":name,
                                     "email":email,
-                                    "imageUrl":url.absoluteString
+                                    "imageUrl1":url.absoluteString
                                 ]
                                 db.collection("users").document(authResult.user.uid).setData(userData) { error in
                                     if let error = error {
