@@ -1,0 +1,135 @@
+
+/* Class = "UIButton"; configuration.title = "Send"; ObjectID = "3Mf-LJ-YHE"; */
+"3Mf-LJ-YHE.configuration.title" = "Send";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3Mf-LJ-YHE"; */
+"3Mf-LJ-YHE.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "786-9U-643"; */
+"786-9U-643.text" = "Description";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "94f-gN-9D0"; */
+"94f-gN-9D0.text" = "Name:";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "9cA-fq-CMw"; */
+"9cA-fq-CMw.text" = "Description";
+
+/* Class = "UILabel"; text = "Address :"; ObjectID = "ARo-kW-EqV"; */
+"ARo-kW-EqV.text" = "Address :";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "Eed-Ha-FwI"; */
+"Eed-Ha-FwI.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Eed-Ha-FwI"; */
+"Eed-Ha-FwI.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "E-mail"; ObjectID = "FQ0-l8-kVO"; */
+"FQ0-l8-kVO.text" = "E-mail";
+
+/* Class = "UIButton"; configuration.title = "Add"; ObjectID = "Fg6-G7-cXb"; */
+"Fg6-G7-cXb.configuration.title" = "Add";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Fg6-G7-cXb"; */
+"Fg6-G7-cXb.normalTitle" = "Button";
+
+/* Class = "UISegmentedControl"; LWP-lP-5qT.segmentTitles[0] = "EN"; ObjectID = "LWP-lP-5qT"; */
+"LWP-lP-5qT.segmentTitles[0]" = "EN";
+
+/* Class = "UISegmentedControl"; LWP-lP-5qT.segmentTitles[1] = "AR"; ObjectID = "LWP-lP-5qT"; */
+"LWP-lP-5qT.segmentTitles[1]" = "AR";
+
+/* Class = "UIButton"; configuration.title = "Cancel"; ObjectID = "NQV-Xe-pxX"; */
+"NQV-Xe-pxX.configuration.title" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NQV-Xe-pxX"; */
+"NQV-Xe-pxX.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "NVl-DV-cXc"; */
+"NVl-DV-cXc.configuration.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "NVl-DV-cXc"; */
+"NVl-DV-cXc.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Confrem Password"; ObjectID = "O2B-Q8-jWl"; */
+"O2B-Q8-jWl.text" = "Confrem Password";
+
+/* Class = "UIButton"; configuration.title = "Create an account"; ObjectID = "PjB-rs-8Vp"; */
+"PjB-rs-8Vp.configuration.title" = "Create an account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "PjB-rs-8Vp"; */
+"PjB-rs-8Vp.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "R4n-ux-eCO"; */
+"R4n-ux-eCO.text" = "Title";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "RLt-ID-ILl"; */
+"RLt-ID-ILl.configuration.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RLt-ID-ILl"; */
+"RLt-ID-ILl.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Terms and Conditions"; ObjectID = "V0V-vj-RQ2"; */
+"V0V-vj-RQ2.text" = "Terms and Conditions";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Yat-e7-Cqv"; */
+"Yat-e7-Cqv.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "aOb-tY-qzw"; */
+"aOb-tY-qzw.text" = "Username";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "b3c-JX-IpS"; */
+"b3c-JX-IpS.text" = "Sign In";
+
+/* Class = "UILabel"; text = "000 - 0000- 00000"; ObjectID = "coz-nU-60I"; */
+"coz-nU-60I.text" = "000 - 0000- 00000";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "f58-am-VKa"; */
+"f58-am-VKa.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fJv-Wd-O3t"; */
+"fJv-Wd-O3t.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "jizan - 1111"; ObjectID = "hJi-1B-Dze"; */
+"hJi-1B-Dze.text" = "jizan - 1111";
+
+/* Class = "UILabel"; text = "Describiton "; ObjectID = "i5Z-xg-49K"; */
+"i5Z-xg-49K.text" = "Describiton ";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "jwE-Ui-oeg"; */
+"jwE-Ui-oeg.text" = "Password";
+
+/* Class = "UILabel"; text = "Agree to the terms add condition "; ObjectID = "kKb-k4-8Qw"; */
+"kKb-k4-8Qw.text" = "Agree to the terms add condition ";
+
+/* Class = "UILabel"; text = "Password :"; ObjectID = "kfa-mX-cbO"; */
+"kfa-mX-cbO.text" = "Password :";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "mpH-A2-kto"; */
+"mpH-A2-kto.text" = "Title";
+
+/* Class = "UILabel"; text = "Product Description "; ObjectID = "oYV-vQ-HNi"; */
+"oYV-vQ-HNi.text" = "Product Description ";
+
+/* Class = "UILabel"; text = "E-mail :"; ObjectID = "qru-K6-42w"; */
+"qru-K6-42w.text" = "E-mail :";
+
+/* Class = "UILabel"; text = "E-mail"; ObjectID = "udS-zL-0hN"; */
+"udS-zL-0hN.text" = "E-mail";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "wDb-WA-Q8B"; */
+"wDb-WA-Q8B.text" = "Welcome";
+
+/* Class = "UIButton"; configuration.title = "Sign In"; ObjectID = "xn6-uE-WwN"; */
+"xn6-uE-WwN.configuration.title" = "Sign In";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xn6-uE-WwN"; */
+"xn6-uE-WwN.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yG0-gU-zFJ"; */
+"yG0-gU-zFJ.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sig in "; ObjectID = "z6u-Da-4oH"; */
+"z6u-Da-4oH.configuration.title" = "Sig in ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "z6u-Da-4oH"; */
+"z6u-Da-4oH.normalTitle" = "Button";

@@ -20,7 +20,6 @@ class DetailsViewController: UIViewController {
         let selectedImage = selectedPostImage {
          postTitleLabel.text = selectedPost.title
           postDescriptionLabe.text = selectedPost.description
-//            postImageView.image = selectedImage
             postImage.image = selectedImage
             
             

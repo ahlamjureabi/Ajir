@@ -11,7 +11,40 @@ class Sign_In_ViewController: UIViewController {
 
     var activityIndicator = UIActivityIndicatorView()
     @IBOutlet weak var emailTextField: UITextField!
+    
+    
+    @IBOutlet weak var emailLabelSinIn: UILabel!{
+        
+        didSet {
+
+           emailLabelSinIn.text = "E-mail".localized
+        }
+    }
+    
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var passwordlabelSinin: UILabel!{
+        
+        didSet {
+
+            passwordlabelSinin.text = "Password".localized
+        }
+    }
+    
+    @IBOutlet weak var creataAccountButton: UIButton!{
+        
+        didSet{
+            creataAccountButton.setTitle("Create an account".localized, for: .normal)
+        }
+    }
+    
+   
+    @IBOutlet weak var sininButtonpage: UIButton! {
+        didSet{
+           sininButtonpage.setTitle("Sig in".localized, for: .normal)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

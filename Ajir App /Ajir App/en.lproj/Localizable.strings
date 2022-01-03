@@ -1,0 +1,20 @@
+
+/* 
+  Localizable.strings
+  Ajir App
+
+  Created by Ahlam Ahlam on 30/05/1443 AH.
+  
+*/
+"Welcome" = "Welcome";
+"Sign Up" = "Sign Up";
+"Sign In" = "Sign In";
+"username" = "Username";
+"E-mail" = "E-mail";
+"Password" = "Password";
+"Confrem Password" = "Confrem Password";
+"Sign Up" = "Sign Up";
+"E-mail" = "E-mail";
+"Password" = "Password";
+"Sig in " = "Sig in ";
+"Create an account" = "Create an account";

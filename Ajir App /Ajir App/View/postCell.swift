@@ -9,9 +9,8 @@ import UIKit
 import Firebase
 class postCell: UITableViewCell {
     @IBOutlet weak var postImageView: UIImageView!
-    @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var postTitleLabel: UILabel!
-    @IBOutlet weak var userNameLabel: UILabel!
+
     @IBOutlet weak var postDescriptionLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,13 +26,13 @@ class postCell: UITableViewCell {
         postTitleLabel.text = post.title
         postDescriptionLabel.text = post.description
         postImageView.loadImageUsingCache(with: post.imageUrl)
-        userNameLabel.text = post.user.name
-        userImageView.loadImageUsingCache(with: post.user.imageeUrl)
+//        userNameLabel.text = post.user.name
+//        userImageView.loadImageUsingCache(with: post.user.imageUrl)
         return self
     }
     
     override func prepareForReuse() {
-        userImageView.image = nil
+//        userImageView.image = nil
         postImageView.image = nil
     }
 }

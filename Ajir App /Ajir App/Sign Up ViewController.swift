@@ -23,12 +23,53 @@ class Sign_Up_ViewController: UIViewController {
         }
     }
     @IBOutlet weak var nameTextField: UITextField!
-    
-    @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    
+    
+    
+    @IBOutlet weak var usernamelabel: UILabel!{
+    didSet {
+
+        usernamelabel.text = "username".localized
+    }
+}
+    
+    @IBOutlet weak var emailLabel: UILabel!{
+        
+        didSet {
+
+           emailLabel.text = "E-mail".localized
+        }
+    }
+    
+    
+    @IBOutlet weak var passwordLabel: UILabel!{
+        
+        didSet {
+
+           passwordLabel.text = "Password".localized
+        }
+    }
+    
+    
+    @IBOutlet weak var confremPasswordLabel: UILabel!{
+        didSet {
+
+            confremPasswordLabel.text = "Confrem Password".localized
+        }
+    }
+    
+    
+    @IBOutlet weak var sinupButton: UIButton! {
+        didSet{
+            sinupButton.setTitle("Sign Up".localized, for: .normal)
+        }
+    }
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePickerController.delegate = self
@@ -73,6 +114,8 @@ class Sign_Up_ViewController: UIViewController {
             Activity.showIndicator(parentView: self.view, childView: activityIndicator)
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let error = error {
+                    Alert.showAlert(strTitle: "Error", strMessage: error.localizedDescription, viewController: self)
+                  Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
                     print("Registration Auth Error",error.localizedDescription)
                 }
                 if let authResult = authResult {
@@ -81,10 +124,14 @@ class Sign_Up_ViewController: UIViewController {
                     uploadMeta.contentType = "image/jpeg"
                     storageRef.putData(imageData, metadata: uploadMeta) { storageMeta, error in
                         if let error = error {
+                      Alert.showAlert(strTitle: "Error", strMessage: error.localizedDescription, viewController: self)
+                        Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
                             print("Registration Storage Error",error.localizedDescription)
                         }
                         storageRef.downloadURL { url, error in
                             if let error = error {
+                                Alert.showAlert(strTitle: "Error", strMessage: error.localizedDescription, viewController: self)
+                                  Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
                                 print("Registration Storage Download Url Error",error.localizedDescription)
                             }
                             if let url = url {
@@ -94,7 +141,7 @@ class Sign_Up_ViewController: UIViewController {
                                     "id":authResult.user.uid,
                                     "name":name,
                                     "email":email,
-                                    "imageUrl1":url.absoluteString
+                                    "imageUrl":url.absoluteString
                                 ]
                                 db.collection("users").document(authResult.user.uid).setData(userData) { error in
                                     if let error = error {
@@ -104,6 +151,7 @@ class Sign_Up_ViewController: UIViewController {
                                             vc.modalPresentationStyle = .fullScreen
                                             Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
                                             self.present(vc, animated: true, completion: nil)
+                               
                                         }
                                     }
                                 }
@@ -120,7 +168,7 @@ class Sign_Up_ViewController: UIViewController {
 }
 
 extension Sign_Up_ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-    
+
     @objc func selectImage() {
         showAlert()
     }
