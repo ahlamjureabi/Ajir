@@ -32,10 +32,13 @@
 		141C05AB277A3287007187F3 /* Product Description ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05AA277A3287007187F3 /* Product Description ViewController.swift */; };
 		141C05BA277B3E9D007187F3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C05B9277B3E9D007187F3 /* DetailsViewController.swift */; };
 		142E8358277C76E100AC41AA /* postCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142E8357277C76E100AC41AA /* postCell.swift */; };
-		142E835A277DAF7500AC41AA /* Contact ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142E8359277DAF7500AC41AA /* Contact ViewController.swift */; };
+		1467D71A278E01DB000FF7CE /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467D719278E01DB000FF7CE /* IntroductionViewController.swift */; };
+		1467D71C278EBD77000FF7CE /* Ajir.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1467D71B278EBD77000FF7CE /* Ajir.mp4 */; };
+		1467D71F278EF155000FF7CE /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1467D71E278EF155000FF7CE /* IQKeyboardManagerSwift */; };
 		147D71D82782283800C1E495 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D71D72782283800C1E495 /* Alert.swift */; };
 		147D71E2278255B600C1E495 /*  BundleExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D71E1278255B600C1E495 /*  BundleExtention.swift */; };
 		147D71ED2783223400C1E495 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 147D71EF2783223400C1E495 /* Localizable.strings */; };
+		14CC176C2793515000DFBEBE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CC176B2793515000DFBEBE /* StartViewController.swift */; };
 		14F5E8CC277C40E100A3AB82 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F5E8CB277C40E100A3AB82 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,13 +86,15 @@
 		141C05AA277A3287007187F3 /* Product Description ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product Description ViewController.swift"; sourceTree = "<group>"; };
 		141C05B9277B3E9D007187F3 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		142E8357277C76E100AC41AA /* postCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postCell.swift; sourceTree = "<group>"; };
-		142E8359277DAF7500AC41AA /* Contact ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Contact ViewController.swift"; path = "View/Contact ViewController.swift"; sourceTree = "<group>"; };
+		1467D719278E01DB000FF7CE /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		1467D71B278EBD77000FF7CE /* Ajir.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ajir.mp4; sourceTree = "<group>"; };
 		147D71D72782283800C1E495 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		147D71E1278255B600C1E495 /*  BundleExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " BundleExtention.swift"; sourceTree = "<group>"; };
 		147D71E92783221500C1E495 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		147D71EA2783221500C1E495 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		147D71EE2783223400C1E495 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		147D71F02783223F00C1E495 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14CC176B2793515000DFBEBE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		14F5E8CB277C40E100A3AB82 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				141C058A2779D9FA007187F3 /* FirebaseAuth in Frameworks */,
+				1467D71F278EF155000FF7CE /* IQKeyboardManagerSwift in Frameworks */,
 				141C058C2779D9FA007187F3 /* FirebaseFirestore in Frameworks */,
 				141C058E2779D9FA007187F3 /* FirebaseStorage in Frameworks */,
 			);
@@ -124,6 +130,7 @@
 		141C05482779D64E007187F3 = {
 			isa = PBXGroup;
 			children = (
+				14CC176B2793515000DFBEBE /* StartViewController.swift */,
 				141C05842779D6D3007187F3 /* .gitignore */,
 				141C05532779D64F007187F3 /* Ajir App */,
 				141C056A2779D653007187F3 /* Ajir AppTests */,
@@ -190,6 +197,7 @@
 		141C05902779E77F007187F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1467D71B278EBD77000FF7CE /* Ajir.mp4 */,
 				141C055A2779D64F007187F3 /* Main.storyboard */,
 				142E8357277C76E100AC41AA /* postCell.swift */,
 			);
@@ -199,14 +207,14 @@
 		141C05952779E848007187F3 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				1467D719278E01DB000FF7CE /* IntroductionViewController.swift */,
 				141C059E2779F950007187F3 /* LandingViewController.swift */,
 				141C05A0277A31C6007187F3 /* Sign Up ViewController.swift */,
-				141C05A2277A31DE007187F3 /* Sign In ViewController.swift */,
-				141C05AA277A3287007187F3 /* Product Description ViewController.swift */,
-				14F5E8CB277C40E100A3AB82 /* HomeViewController.swift */,
-				141C05B9277B3E9D007187F3 /* DetailsViewController.swift */,
 				141C05A4277A321D007187F3 /* Terms ViewController.swift */,
-				142E8359277DAF7500AC41AA /* Contact ViewController.swift */,
+				141C05A2277A31DE007187F3 /* Sign In ViewController.swift */,
+				14F5E8CB277C40E100A3AB82 /* HomeViewController.swift */,
+				141C05AA277A3287007187F3 /* Product Description ViewController.swift */,
+				141C05B9277B3E9D007187F3 /* DetailsViewController.swift */,
 				147D71E1278255B600C1E495 /*  BundleExtention.swift */,
 				147D71EF2783223400C1E495 /* Localizable.strings */,
 			);
@@ -242,6 +250,7 @@
 				141C05892779D9FA007187F3 /* FirebaseAuth */,
 				141C058B2779D9FA007187F3 /* FirebaseFirestore */,
 				141C058D2779D9FA007187F3 /* FirebaseStorage */,
+				1467D71E278EF155000FF7CE /* IQKeyboardManagerSwift */,
 			);
 			productName = "Ajir App";
 			productReference = 141C05512779D64F007187F3 /* Ajir App.app */;
@@ -318,6 +327,7 @@
 			mainGroup = 141C05482779D64E007187F3;
 			packageReferences = (
 				141C05882779D9F9007187F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1467D71D278EF155000FF7CE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 141C05522779D64F007187F3 /* Products */;
 			projectDirPath = "";
@@ -339,6 +349,7 @@
 				147D71ED2783223400C1E495 /* Localizable.strings in Resources */,
 				141C05612779D653007187F3 /* LaunchScreen.storyboard in Resources */,
 				141C055E2779D653007187F3 /* Assets.xcassets in Resources */,
+				1467D71C278EBD77000FF7CE /* Ajir.mp4 in Resources */,
 				141C055C2779D64F007187F3 /* Main.storyboard in Resources */,
 				141C05872779D8E8007187F3 /* GoogleService-Info.plist in Resources */,
 			);
@@ -365,10 +376,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142E835A277DAF7500AC41AA /* Contact ViewController.swift in Sources */,
 				141C05592779D64F007187F3 /* ViewController.swift in Sources */,
 				141C05942779E81E007187F3 /* image.swift in Sources */,
 				147D71D82782283800C1E495 /* Alert.swift in Sources */,
+				1467D71A278E01DB000FF7CE /* IntroductionViewController.swift in Sources */,
 				141C059F2779F950007187F3 /* LandingViewController.swift in Sources */,
 				14F5E8CC277C40E100A3AB82 /* HomeViewController.swift in Sources */,
 				141C05A5277A321D007187F3 /* Terms ViewController.swift in Sources */,
@@ -379,6 +390,7 @@
 				141C05972779F2FB007187F3 /* User.swift in Sources */,
 				141C05BA277B3E9D007187F3 /* DetailsViewController.swift in Sources */,
 				142E8358277C76E100AC41AA /* postCell.swift in Sources */,
+				14CC176C2793515000DFBEBE /* StartViewController.swift in Sources */,
 				141C05572779D64F007187F3 /* SceneDelegate.swift in Sources */,
 				141C05A1277A31C6007187F3 /* Sign Up ViewController.swift in Sources */,
 				141C05A3277A31DE007187F3 /* Sign In ViewController.swift in Sources */,
@@ -771,6 +783,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		1467D71D278EF155000FF7CE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -788,6 +808,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 141C05882779D9F9007187F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		1467D71E278EF155000FF7CE /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1467D71D278EF155000FF7CE /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

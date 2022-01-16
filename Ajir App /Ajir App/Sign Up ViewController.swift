@@ -8,7 +8,8 @@
 import UIKit
 import Firebase
 class Sign_Up_ViewController: UIViewController {
-    
+    var selectdata:[User] = []
+    var selectDataPost:[Post] = []
     let imagePickerController = UIImagePickerController()
     var activityIndicator = UIActivityIndicatorView()
     @IBOutlet weak var userImageView: UIImageView! {
@@ -22,20 +23,29 @@ class Sign_Up_ViewController: UIViewController {
             userImageView.addGestureRecognizer(tabGesture)
         }
     }
+    
+    
+    @IBOutlet weak var eyeOne: UIButton!
+    
+    
+    @IBOutlet weak var eyeTwo: UIButton!
+    
+    
+    
+//    @IBOutlet weak var eyeOne: UITextField!
+//
+//    @IBOutlet weak var eyeTwo: UITextField!
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
-    
-    
-    
     @IBOutlet weak var usernamelabel: UILabel!{
     didSet {
 
         usernamelabel.text = "username".localized
     }
 }
-    
     @IBOutlet weak var emailLabel: UILabel!{
         
         didSet {
@@ -43,8 +53,6 @@ class Sign_Up_ViewController: UIViewController {
            emailLabel.text = "E-mail".localized
         }
     }
-    
-    
     @IBOutlet weak var passwordLabel: UILabel!{
         
         didSet {
@@ -52,31 +60,36 @@ class Sign_Up_ViewController: UIViewController {
            passwordLabel.text = "Password".localized
         }
     }
-    
-    
     @IBOutlet weak var confremPasswordLabel: UILabel!{
         didSet {
 
             confremPasswordLabel.text = "Confrem Password".localized
         }
     }
-    
-    
     @IBOutlet weak var sinupButton: UIButton! {
         didSet{
             sinupButton.setTitle("Sign Up".localized, for: .normal)
         }
     }
-    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePickerController.delegate = self
+        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
+
+        passwordTextField.rightView = eyeOne
+        passwordTextField.rightViewMode = .whileEditing
+       
+        confirmPasswordTextField.rightView = eyeTwo
+        confirmPasswordTextField.rightViewMode = .whileEditing
+//        youView.layer.masksToBounds = false
+//       youView.layer.shadowOffset = CGSize(width: -3, height: 3)
+//        youView.layer.shadowRadius = 2.5
+//        youView.layer.shadowOpacity = 3.5
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func changePasswordVisibility(_ sender: AnyObject) {
+    @IBAction func changePasswordVisibility(_ sender: AnyObject){
         passwordTextField.isSecureTextEntry.toggle()
         if  passwordTextField.isSecureTextEntry {
             if let image = UIImage(systemName: "eye.fill") {
@@ -88,7 +101,6 @@ class Sign_Up_ViewController: UIViewController {
             }
         }
     }
-    
     @IBAction func eyePasswordConfrem(_ sender: AnyObject) {
         confirmPasswordTextField.isSecureTextEntry.toggle()
         if  confirmPasswordTextField.isSecureTextEntry {
@@ -102,7 +114,8 @@ class Sign_Up_ViewController: UIViewController {
         }
     }
     
-    @IBAction func handleRegister(_ sender: Any) {
+    @IBAction func handleRegister(_ sender: UIButton) {
+
         
         if let image = userImageView.image,
            let imageData = image.jpegData(compressionQuality: 0.75),
@@ -147,10 +160,12 @@ class Sign_Up_ViewController: UIViewController {
                                     if let error = error {
                                         print("Registration Database error",error.localizedDescription)
                                     }else {
-                                        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeNavigationController") as? UINavigationController {
+                                        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "goTo") as? UINavigationController {
                                             vc.modalPresentationStyle = .fullScreen
                                             Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
                                             self.present(vc, animated: true, completion: nil)
+                    
+                                            
                                
                                         }
                                     }
@@ -162,10 +177,18 @@ class Sign_Up_ViewController: UIViewController {
             }
         }
         
+//        if nameTextField.isAccessibilityElement == true
+//            {
+//            handleRegister()
+//
+//            }
+        
+        
     }
     
-    
 }
+
+
 
 extension Sign_Up_ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 

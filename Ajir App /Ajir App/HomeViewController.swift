@@ -4,32 +4,55 @@
 //
 //  Created by Ahlam Ahlam on 25/05/1443 AH.
 //
-
+//import AVKit
+//import AVFoundation
 import UIKit
 import Firebase
+import simd
 class HomeViewController: UIViewController {
     
     var posts = [Post]()
     var selectedPost:Post?
+    var filteredPost:[Post] = []
     var selectedPostImage:UIImage?
-
+    var selectedUseImage:UIImage?
+let searchController = UISearchController(searchResultsController: nil)
     @IBOutlet weak var postsTableView: UITableView! {
         didSet {
             postsTableView.delegate = self
             postsTableView.dataSource = self
             postsTableView.register(UINib(nibName: "postCell", bundle: nil), forCellReuseIdentifier: "postCell")
+            postsTableView.sectionHeaderTopPadding = 0
         }
     }
+    
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "Ajir", ofType: "m4v")!))
+//        let layer = AVPlayerLayer(player: player)
+//        layer.frame = view.bounds
+//        view.layer.addSublayer(layer)
+//        player.play()
+//    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         getPosts()
-
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = true
+        
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search"
+        definesPresentationContext = true
+        searchController.searchResultsUpdater = self
+       
 }
     
     func getPosts() {
         let ref = Firestore.firestore()
         ref.collection("posts").order(by: "createdAt",descending: true).addSnapshotListener { snapshot, error in
-            if let error = error {
+    if let error = error {
                 print("DB ERROR Posts",error.localizedDescription)
             }
             if let snapshot = snapshot {
@@ -117,10 +140,12 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return searchController.isActive ?filteredPost.count : posts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! postCell
+        let post = searchController.isActive ? filteredPost[indexPath.row]: posts[indexPath.row]
+        cell.configure(with: post)
         return cell.configure(with: posts[indexPath.row])
     }
 }
@@ -128,7 +153,7 @@ extension HomeViewController: UITableViewDataSource{
 extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           return 200
+           return 350
 }
     
     
@@ -143,6 +168,19 @@ extension HomeViewController: UITableViewDelegate {
             performSegue(withIdentifier: "toDetailsVC", sender: self)
             
         }
+    }
+    
+    
+}
+extension HomeViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filteredPost = posts.filter({ selectedPost in
+            return selectedPost.city.lowercased().contains(searchController.searchBar.text!.lowercased()) ||
+           selectedPost.title.lowercased().contains(searchController.searchBar.text!.lowercased()) ||
+            selectedPost.description.lowercased().contains(searchController.searchBar.text!.lowercased()) ||
+            selectedPost.address.lowercased().contains(searchController.searchBar.text!.lowercased()) 
+        })
+        postsTableView.reloadData()
     }
 }
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -7,10 +7,13 @@
 
 import UIKit
 import Firebase
+import Contacts
 class Product_Description_ViewController: UIViewController {
     var selectedPost:Post?
     var selectedPostImage:UIImage?
+    
     @IBOutlet weak var actionButton: UIButton!
+    
     @IBOutlet weak var postImageView: UIImageView!{
         didSet {
             postImageView.isUserInteractionEnabled = true
@@ -18,23 +21,93 @@ class Product_Description_ViewController: UIViewController {
             postImageView.addGestureRecognizer(tapGesture)
         }
     }
+  
     @IBOutlet weak var postTitleTextField: UITextField!
+    
+
+    @IBOutlet weak var postPoneNumber: UITextField!
+    
+    
+    @IBOutlet weak var phoneNumberLabel: UILabel!{
+            
+            didSet {
+
+              phoneNumberLabel.text = "PhoneNumber".localized
+            }
+        }
+   
+    
     @IBOutlet weak var postDescriptionTextField: UITextField!
+    
+    @IBOutlet weak var postAddress: UITextField!
+    
+    
+    @IBOutlet weak var addressLabel: UILabel!{
+        
+        didSet {
+
+        addressLabel.text = "Address".localized
+        }
+    }
+ 
+    @IBOutlet weak var postCity: UITextField!
+    
+    
+    @IBOutlet weak var cityLabel: UILabel!{
+        
+        didSet {
+
+          cityLabel.text = "City".localized
+        }
+    }
+    
     let activityIndicator = UIActivityIndicatorView()
+    
+    
+    @IBOutlet weak var productLabel: UILabel!{
+        
+        didSet {
+
+            productLabel.text = "Product Description".localized
+        }
+    }
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!{
+        
+        didSet {
+
+           titleLabel.text = "Title".localized
+        }
+    }
+    
+    
+    @IBOutlet weak var DescribitonLabel: UILabel!{
+        didSet {
+
+            DescribitonLabel.text = "Describiton".localized
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let selectedPost = selectedPost,
         let selectedImage = selectedPostImage{
+            postPoneNumber.text = selectedPost.phone
             postTitleTextField.text = selectedPost.title
+            postAddress.text = selectedPost.address
+            postCity.text = selectedPost.city
             postDescriptionTextField.text = selectedPost.description
             postImageView.image = selectedImage
-            actionButton.setTitle("Update", for: .normal)
+            actionButton.setTitle("Update".localized, for: .normal)
             let deleteBarButton = UIBarButtonItem(image: UIImage(systemName: "trash.fill"), style: .plain, target: self, action: #selector(handleDelete))
             self.navigationItem.rightBarButtonItem = deleteBarButton
         }else {
-            actionButton.setTitle("Add", for: .normal)
+            actionButton.setTitle("Add".localized, for: .normal)
             self.navigationItem.rightBarButtonItem = nil
             
+            view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
+
         }
         // Do any additional setup after loading the view.
     }
@@ -67,6 +140,9 @@ class Product_Description_ViewController: UIViewController {
         if let image = postImageView.image,
            let imageData = image.jpegData(compressionQuality: 0.75),
            let title = postTitleTextField.text,
+           let phone = postPoneNumber.text,
+           let address = postAddress.text,
+           let city = postCity.text,
            let description = postDescriptionTextField.text,
            let currentUser = Auth.auth().currentUser {
             Activity.showIndicator(parentView: self.view, childView: activityIndicator)
@@ -93,7 +169,10 @@ class Product_Description_ViewController: UIViewController {
                             postData = [
                                 "userId":selectedPost.user.id,
                                 "title":title,
+                                "phone":phone,
                                 "description":description,
+                                "address":address,
+                                "city":city,
                                 "imageUrl":url.absoluteString,
                                 "createdAt":selectedPost.createdAt ?? FieldValue.serverTimestamp(),
                                 "updatedAt": FieldValue.serverTimestamp()
@@ -102,7 +181,10 @@ class Product_Description_ViewController: UIViewController {
                             postData = [
                                 "userId":currentUser.uid,
                                 "title":title,
+                                "phone":phone,
                                 "description":description,
+                                "address":address,
+                                "city":city,
                                 "imageUrl":url.absoluteString,
                                 "createdAt":FieldValue.serverTimestamp(),
                                 "updatedAt": FieldValue.serverTimestamp()

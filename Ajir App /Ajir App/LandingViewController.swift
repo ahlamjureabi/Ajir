@@ -7,9 +7,14 @@
 
 import UIKit
 
+
 class LandingViewController: UIViewController {
 
-    @IBOutlet weak var languageSegmentControl: UISegmentedControl!{
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var languageSegmentControl: UISegmentedControl!
+    
+    {
         didSet {
             if let lang = UserDefaults.standard.string(forKey: "currentLanguage") {
                 switch lang {
@@ -38,6 +43,19 @@ class LandingViewController: UIViewController {
         }
     }
  
+    
+    
+    
+    
+    
+    @IBOutlet weak var applicationGoalLabel: UILabel!{
+        didSet {
+
+        applicationGoalLabel.text = "Ajeer, Ajeer is a Saudi application that contains the rental of all goods and car rental Equipment rental".localized
+    }
+}
+
+    
     @IBOutlet weak var welcomeLabel: UILabel!{
     
     didSet {
@@ -56,9 +74,34 @@ class LandingViewController: UIViewController {
           signInButton.setTitle("Sign In".localized, for: .normal)
         }
     }
+    @IBOutlet weak var viewLanding: UIView!{
 
+    didSet{
+        viewLanding.layer.cornerRadius = 10
+        viewLanding.layer.shadowColor = UIColor.black.cgColor
+        viewLanding.layer.shadowOpacity = 0.5
+        viewLanding.layer.shadowOffset = CGSize.zero
+        viewLanding.layer.shadowRadius = 5
+    }
+}
+
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        viewLanding.layer.cornerRadius = 60
+        viewLanding.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+
+        
+       imageView.layer.cornerRadius = 60
+       imageView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+ 
+    }
     
-    @IBAction func languageChanged(_ sender: Any) {
+//    @IBOutlet weak var viewLanding: UIView!
+    
+    @IBAction func languageChanged(_ sender: UISegmentedControl) {
+    
         if let lang = (sender as AnyObject).titleForSegment(at:(sender as AnyObject).selectedSegmentIndex)?.lowercased() {
             UserDefaults.standard.set(lang, forKey: "currentLanguage")
             Bundle.setLanguage(lang)
@@ -66,6 +109,7 @@ class LandingViewController: UIViewController {
             if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                let sceneDelegate = windowScene.delegate as? SceneDelegate {
                 sceneDelegate.window?.rootViewController = storyboard.instantiateInitialViewController()
+                print(lang)
             }
         }
     }

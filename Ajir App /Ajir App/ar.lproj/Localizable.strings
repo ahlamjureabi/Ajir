@@ -17,3 +17,40 @@
 "Password" = "الرقم السري";
 "Sig in" = "تسجيل الدخول";
 "Create an account" = "إنشاء مستخدم جديد";
+"Product Description" = "وصف المنتج";
+"Title" = "الموضوع";
+"Describiton" = "الوصف";
+"PhoneNumber" = "رقم الجوال";
+"City" = "المدينه";
+"Address" = "العنوان";
+"Title" = "الموضوع";
+"Description" = "وصف المنتج";
+"phone" = "الجوال";
+"Update" = "تحديث";
+"Add" = "إضافة";
+"Ajeer, Ajeer is a Saudi application that contains the rental of all goods and car rental Equipment rental" = "أجير ، أجير هو تطبيق سعودي يحتوي على تأجير جميع البضائع وتأجير السيارات وتأجير المعدات";
+
+
+ "1- Not to use our Services if you are not legally qualified to complete this Agreement. For example, that you are under 18 years of age or that you are temporarily or permanently restricted from using the Application.2 - Not to manipulate the prices of the rental goods and cause harm to other users.3 - Not to publish false, inaccurate, misleading, deceptive, defamatory, or defamatory advertisements or comments.4 - Not to be exposed to international policies or sovereigns, or esteemed personalities, or any discussions that are not related to legitimate buying and selling in the Ajeer application." = "1- عدم استخدام خدماتنا إذا لم تكن مؤهلاً قانونًا لإكمال هذه الاتفاقية. على سبيل المثال ، أن عمرك أقل من 18 عامًا أو أنك ممنوع مؤقتًا أو دائمًا من استخدام التطبيق.
+2 - عدم التلاعب بأسعار السلع المؤجرة وإلحاق الضرر بالمستخدمين الآخرين
+.3 - عدم نشر معلومات كاذبة وغير دقيقة. الإعلانات أو التعليقات المضللة أو الخادعة أو التشهيرية أو التشهيرية
+.4 - عدم التعرض للسياسات الدولية أو الملوك أو الشخصيات الموقرة أو أي مناقشات لا تتعلق بالشراء والبيع المشروع في تطبيق أجير.";
+
+
+"Terms and Conditions" = "الشروط و الأحكام";
+
+
+"Next" = "التالي";
+
+"Cancel" = "إلغاء";
+
+"Agree to the terms" = "الموافقه علی الشروط";
+
+
+
+
+
+
+
+
+//1- عدم استخدام خدماتنا إذا لم تكن مؤهلاً قانونًا لإكمال هذه الاتفاقية. على سبيل المثال ، أن عمرك أقل من 18 عامًا أو أنك ممنوع مؤقتًا أو دائمًا من استخدام التطبيق. 2 - عدم التلاعب بأسعار السلع المؤجرة وإلحاق الضرر بالمستخدمين الآخرين .3 - عدم نشر معلومات كاذبة وغير دقيقة. الإعلانات أو التعليقات المضللة أو الخادعة أو التشهيرية أو التشهيرية .4 - عدم التعرض للسياسات الدولية أو الملوك أو الشخصيات الموقرة أو أي مناقشات لا تتعلق بالشراء والبيع المشروع في تطبيق أجير.
